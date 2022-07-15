@@ -1,18 +1,14 @@
 # Atividade-Python-M1
-Atividades Python 
-#atividades Python
-#1° Faça um programa que peça dois números e verifique (usando if e else) e imprima o maior deles.
 
+#1° Faça um programa que peça dois números e verifique (usando if e else) e imprima o maior deles.
 n1 = int(input('qual o primeiro numero:'))
 n2 = int(input('qual o segundo numero:'))
-
 if n1 > n2:
     print ('Maior numero é', n1)
 else : 
     print ('Maior numero é', n2):
 
 #2° Faça um programa que verifique (usando if e else) se uma letra digitada é vogal ou consoante.
-
 letra = input ("Digite uma letra:")
 if letra =='a' or letra =='e' or letra =='i' or letra =='o' or letra =='u' :
     print("Letra é uma vogal")
@@ -26,9 +22,6 @@ turno = input ("Qual o seria seu horario\n"
             "N-noturno\n")
 
 if turno == 'M':
-
-
-
 print("Bom dia!")
 elif turno =='V':
         print("Boa tarde")
@@ -37,7 +30,8 @@ elif turno == 'N':
 else:
     print("Valor inválido")
 
- #4° Faça um Programa que peça um número inteiro e determine se ele e par ou ímpar. Dica: utilize o operador módulo (resto da divisão).
+
+#4° Faça um Programa que peça um número inteiro e determine se ele e par ou ímpar. Dica: utilize o operador módulo (resto da divisão).
 
 numero3  = int(input("Digite um numero:"))
 if numero3 % 2 == 0:
@@ -70,3 +64,18 @@ while i <lado:
     j =0 
 
 #8° Faça um programa que recebe a altura de um triangulo em um número inteiro e imprima-o utilizando asteriscos.
+lado = int(input("Digitar o lado do triangulo:"))
+i = 0
+j = 0
+k = 1
+
+while i <lado :
+    while j < k:
+        if k <= lado:
+            print("*" , end='')
+            j += 1
+        print('')
+        k += 1
+        j = 0
+        i += 1
+
